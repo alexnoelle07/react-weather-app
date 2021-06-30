@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import { canConstructResponseFromBodyStream } from "workbox-core/_private";
 
-export default function Weather() {
+export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false});
     function handleResponse(response) {
         console.log(response.data);
@@ -73,7 +73,7 @@ export default function Weather() {
     );
 } else {
     const apiKey ="9be8f6893478d4ae7dcbe7d79fe4b147";
-    let city = "San Francisco";
+    let city = props.defaultCity;
     let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 
