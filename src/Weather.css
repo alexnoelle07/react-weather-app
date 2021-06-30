@@ -1,0 +1,88 @@
+:root {
+    --primary-font: rgb(220, 196, 243);
+    --primary-background: #a4508b;
+    --primary-bg-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+.Weather {
+    background-color: var(--primary-background);
+    background-image: var(--primary-bg-image);
+    border-radius: 5px;
+    color: var(--primary-font);
+    font-family: 'Just Another Hand', cursive;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/*search form styling*/
+
+.Weather .cityForm {
+    font-size: 25px;
+    background-color: var(--primary-font);
+}
+.Weather .btn {
+    text-align: center;
+    color: var(--primary-font);
+    font-size: 25px;
+    background-color: transparent;
+    border-color: var(--primary-font);
+}
+.Weather .enterCity:hover {
+    color: #fff;
+}
+
+.Weather .fas:hover {
+    color: #fff;
+}
+
+/*city info styling*/
+.Weather .cityInfo {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.Weather .date {
+    margin-bottom: 40px;
+}
+.Weather #today {
+    font-size: 35px;
+    color: var(--primary-font);
+}
+.Weather #time {
+    font-size: 35px;
+    color: var(--primary-font);
+}
+.Weather #city {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+/*weather temperature units, conversion, and description */
+
+.Weather .temperature-unit {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 100px;
+    text-align: center;
+    background-color: transparent;
+
+}
+.Weather button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    vertical-align: top;
+}
+.Weather .break {
+    font-size: 30px;
+    color: #fff;
+    vertical-align: top;
+}
+.Weather button:hover {
+    font-size: 33px;
+    transition: ease-in-out 200ms;
+}
+.Weather li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+}
