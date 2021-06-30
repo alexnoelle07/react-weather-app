@@ -86,3 +86,6 @@
     font-size: 25px;
     line-height: 1.5;
 }
+.Weather li.description {
+    text-transform: capitalize;
+}
