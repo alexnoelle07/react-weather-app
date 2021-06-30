@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
+import FormattedTime from "./FormattedTime";
 import axios from "axios";
 import "./Weather.css";
-import { canConstructResponseFromBodyStream } from "workbox-core/_private";
+
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false});
+
     function handleResponse(response) {
         console.log(response.data);
         setWeatherData({
@@ -13,7 +16,7 @@ export default function Weather(props) {
             wind: response.data.wind.speed,
             city: response.data.name,
             humidity: response.data.main.humidity,
-            date: "Saturday May 4, 2021",
+            date: new Date(response.data.dt * 1000),
             description: response.data.weather[0].description
         })
     }
@@ -32,10 +35,10 @@ export default function Weather(props) {
             <div className="cityInfo text-center">
                 <div className="row">
                     <div className="col-6">
-                        <p id="today">{weatherData.date}</p>
+                        <p id="today"><FormattedDate date={weatherData.date} /></p>
                     </div>
                     <div className="col-6">
-                        <p id="time">17:00</p>
+                        <p id="time"><FormattedTime time={weatherData.date} /></p>
                     </div>
                 </div>
                 <h1 id="city">{weatherData.city}</h1>
