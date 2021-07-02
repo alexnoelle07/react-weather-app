@@ -12,6 +12,10 @@
 }
 
 /*styles by time of day */
+.midnight {
+    background: var(--primary-background);
+    color: var(--primary-font);
+}
 .evening {
     background: linear-gradient(to right, #f27121, #8a2387) !important;
     color: #542E71;
@@ -40,7 +44,7 @@
     color: var(--primary-font);
     font-size: 25px;
     background-color: transparent;
-    border-color: var(--primary-font);
+    border: 1px solid #fff;
 }
 .Weather .enterCity:hover {
     color: #fff;

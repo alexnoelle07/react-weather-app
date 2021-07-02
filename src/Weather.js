@@ -36,7 +36,7 @@ export default function Weather(props) {
     function handleCityChange(event) {
         setCity(event.target.value);
     }
-
+  
     if (weatherData.ready) {
         return(
         <div className="Weather">
@@ -50,7 +50,7 @@ export default function Weather(props) {
                         onChange={handleCityChange}/>
                     <div className="input-group-append">
                         <button className="btn enterCity" type="button">Search</button>
-                        <button className="btn submitCity" type="button"><i className="fa-solid fa-compass"></i></button>
+                        <button className="btn submitCity" type="button">Locate</button>
                     </div>
                 </div>
             </form>
