@@ -4,7 +4,7 @@ import "./Weather.css";
 export default function FormattedTime(props) {
     let hours = props.time.getHours();
     let minutes = props.time.getMinutes();
-    let mode = document.getElementsByClassName("Weather midnight");
+    //let mode = document.getElementsByClassName("Weather midnight");
 
 
     if (minutes < 10) {
