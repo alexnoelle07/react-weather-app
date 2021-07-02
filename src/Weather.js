@@ -49,8 +49,8 @@ export default function Weather(props) {
                         autoFocus="on"
                         onChange={handleCityChange}/>
                     <div className="input-group-append">
-                        <button className="btn enterCity" type="button">Search</button>
-                        <button className="btn submitCity" type="button">Locate</button>
+                        <button className="btn enterCity" type="button" onClick={handleSubmit}>Search</button>
+                        
                     </div>
                 </div>
             </form>
@@ -63,5 +63,7 @@ export default function Weather(props) {
     return "Loading...";
     }
 }
+
+//<button className="btn submitCity" type="button">Locate</button>
     
     
