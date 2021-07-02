@@ -1,16 +1,32 @@
 :root {
     --primary-font: rgb(220, 196, 243);
-    --primary-background: #a4508b;
-    --primary-bg-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    --primary-background: linear-gradient(#a4508b, #5f0a87);
 }
 .Weather {
-    background-color: var(--primary-background);
-    background-image: var(--primary-bg-image);
+    background: var(--primary-background);
     border-radius: 5px;
     color: var(--primary-font);
     font-family: 'Just Another Hand', cursive;
     margin-top: 20px;
     padding: 20px;
+}
+
+/*styles by time of day */
+.evening {
+    background: linear-gradient(to right, #f27121, #8a2387) !important;
+    color: #542E71;
+}
+.afternoon {
+    background: linear-gradient(to right, #fdc830, #f37335) !important;
+    color: #000;
+}
+.dayTime {
+    background: linear-gradient(to right, #4da0b0, #d39d38) !important;
+    color: #D0E8F2;
+}
+.morning {
+    background: linear-gradient(to right, #8a2387, #4da0b0) !important;
+    color: #fff;
 }
 
 /*search form styling*/
