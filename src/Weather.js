@@ -4,6 +4,7 @@ import axios from "axios";
 import "./Weather.css";
 
 
+
 export default function Weather(props) {
 
     const [weatherData, setWeatherData] = useState({ ready: false});
@@ -31,10 +32,29 @@ export default function Weather(props) {
     }
     function handleSubmit(event) {
         event.preventDefault();
-        search();
+        if(city) {
+            search(city);
+        } else {
+            alert('Please enter a city');
+        }
     }
     function handleCityChange(event) {
         setCity(event.target.value);
+    }
+
+    //API call by geolocation
+
+    function locationSearch(position) {
+        let apiKey = "9be8f6893478d4ae7dcbe7d79fe4b147";
+        let lat = position.coords.latitude;
+        let lon = position.coords.longitude;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+        axios.get(apiUrl).then(handleResponse);
+    }
+
+    function getLocation(event) {
+        event.preventDefault();
+        navigator.geolocation.getCurrentPosition(locationSearch);
     }
   
     if (weatherData.ready) {
@@ -50,12 +70,11 @@ export default function Weather(props) {
                         onChange={handleCityChange}/>
                     <div className="input-group-append">
                         <button className="btn enterCity" type="button" onClick={handleSubmit}>Search</button>
-                        
+                        <button className="btn submitCity" type="button" onClick={getLocation}>Locate</button>
                     </div>
                 </div>
             </form>
             <WeatherInfo data={weatherData} />
-            
         </div>
     );
 } else {
@@ -64,6 +83,6 @@ export default function Weather(props) {
     }
 }
 
-//<button className="btn submitCity" type="button">Locate</button>
+
     
     

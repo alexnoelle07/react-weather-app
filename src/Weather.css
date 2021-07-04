@@ -11,27 +11,7 @@
     padding: 20px;
 }
 
-/*styles by time of day */
-.midnight {
-    background: var(--primary-background);
-    color: var(--primary-font);
-}
-.evening {
-    background: linear-gradient(to right, #f27121, #8a2387) !important;
-    color: #542E71;
-}
-.afternoon {
-    background: linear-gradient(to right, #fdc830, #f37335) !important;
-    color: #000;
-}
-.dayTime {
-    background: linear-gradient(to right, #4da0b0, #d39d38) !important;
-    color: #D0E8F2;
-}
-.morning {
-    background: linear-gradient(to right, #8a2387, #4da0b0) !important;
-    color: #fff;
-}
+
 
 /*search form styling*/
 
@@ -76,6 +56,7 @@
 }
 
 /*weather temperature units, conversion, and description */
+
 
 .Weather .temperature-unit {
     font-family: 'Dela Gothic One', cursive;

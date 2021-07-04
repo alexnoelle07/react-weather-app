@@ -13,7 +13,7 @@ export default function FormattedTime(props) {
 
     return (
         <div>
-        {hours}:{minutes}
+        As of: {hours}:{minutes}
         
         </div>
         
