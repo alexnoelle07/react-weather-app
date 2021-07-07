@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
+import moment from "moment";
 
 
 
@@ -10,9 +11,25 @@ export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false});
     const [city, setCity] = useState(props.defaultCity);
 
+    const hours = moment().hour();
+    var mode = "";
+    if (hours < 24) {
+      mode = "midnight"
+    }
+    if (hours < 19) {
+      mode = "evening";
+    }
+    if (hours < 15) {
+      mode ="afternoon";
+    }
+    if (hours < 11) {
+      mode = "dayTime";
+    }
+    if (hours < 6) {
+      mode = "morning";
+    }
+    
     function handleResponse(response) {
-
-        console.log(response.data);
         setWeatherData({
             ready: true,
             temperature: response.data.main.temp,

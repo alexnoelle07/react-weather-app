@@ -1,6 +1,6 @@
 :root {
-    --primary-font: rgb(220, 196, 243);
-    --primary-background: linear-gradient(#a4508b, #5f0a87);
+    --primary-font: #dcc4f3;
+    --primary-background: #2f0044;
 }
 .Weather {
     background: var(--primary-background);

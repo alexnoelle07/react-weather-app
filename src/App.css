@@ -6,25 +6,24 @@
     text-align: center;
 }
 
-/*styles by time of day 
+
 .midnight {
     background: var(--primary-background);
     color: var(--primary-font);
 }
 .evening {
-    background: linear-gradient(to right, #f27121, #8a2387) !important;
-    color: #542E71;
+    background: #8a2387;
+    color: #f7afd7;
 }
 .afternoon {
-    background: linear-gradient(to right, #fdc830, #f37335) !important;
-    color: #000;
+    background: #f37335;
+    color: rgb(255, 253, 142);
 }
 .dayTime {
-    background: linear-gradient(to right, #4da0b0, #d39d38) !important;
-    color: #D0E8F2;
+    background: #4da0b0;
+    color: #ff7300;
 }
 .morning {
-    background: linear-gradient(to right, #8a2387, #4da0b0) !important;
-    color: #fff;
+    background: #f8f41d;
+    color: rgb(75, 43, 117);
 }
-*/
