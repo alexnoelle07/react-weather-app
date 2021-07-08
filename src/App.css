@@ -6,25 +6,38 @@
     text-align: center;
 }
 
-/*
+
 .midnight {
-    background: var(--primary-background);
-    color: var(--primary-font);
+    background: #0f0c29;  
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+    color: #8292BE;
 }
 .evening {
-    background: #8a2387;
-    color: #f7afd7;
+    background: #1a2a6c; 
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); 
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); 
+
+    color: #e6cad9;
 }
 .afternoon {
-    background: #f37335;
-    color: rgb(255, 253, 142);
+    background: #f79d00;
+    background: -webkit-linear-gradient(to left, #64f38c, #f79d00);
+    background: linear-gradient(to left, #64f38c, #f79d00);
+    color: rgb(228, 102, 0);
 }
 .dayTime {
-    background: #4da0b0;
-    color: #ff7300;
+    background: #c2e59c;  
+    background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c); 
+    background: linear-gradient(to left, #64b3f4, #c2e59c); 
+
+    color: #b1efff;
 }
 .morning {
-    background: #f8f41d;
+    background: #F3904F;  
+    background: -webkit-linear-gradient(to left, #3B4371, #F3904F);  
+    background: linear-gradient(to left, #3B4371, #F3904F); 
+
     color: rgb(75, 43, 117);
 }
-*/
+

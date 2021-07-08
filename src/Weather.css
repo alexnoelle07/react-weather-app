@@ -1,14 +1,12 @@
-:root {
-    --primary-font: #dcc4f3;
-    --primary-background: #2f0044;
-}
+
 .Weather {
-    background: var(--primary-background);
+    background: #000;
     border-radius: 5px;
-    color: var(--primary-font);
+    color: #fff;
     font-family: 'Just Another Hand', cursive;
     margin-top: 20px;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
 
@@ -17,21 +15,21 @@
 
 .Weather .cityForm {
     font-size: 25px;
-    background-color: var(--primary-font);
+    color: #fff;
 }
 .Weather .btn {
     text-align: center;
-    color: var(--primary-font);
+    
     font-size: 25px;
     background-color: transparent;
     border: 1px solid #fff;
 }
 .Weather .enterCity:hover {
-    color: #fff;
+    font-weight: bold;
 }
 
-.Weather .fas:hover {
-    color: #fff;
+.Weather .submitCity:hover {
+    font-weight: bold;
 }
 
 /*city info styling*/
@@ -44,11 +42,11 @@
 }
 .Weather #today {
     font-size: 35px;
-    color: var(--primary-font);
+    
 }
 .Weather #time {
     font-size: 35px;
-    color: var(--primary-font);
+    
 }
 .Weather #city {
     font-size: 50px;
@@ -63,7 +61,6 @@
     font-size: 100px;
     text-align: center;
     background-color: transparent;
-
 }
 .Weather button {
     background-color: transparent;
@@ -78,7 +75,6 @@
     vertical-align: top;
 }
 .Weather button:hover {
-    font-size: 33px;
     transition: ease-in-out 200ms;
 }
 .Weather li {

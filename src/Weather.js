@@ -4,7 +4,7 @@ import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
-//import moment from "moment";
+import moment from "moment";
 
 
 
@@ -13,14 +13,14 @@ export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false});
     const [city, setCity] = useState(props.defaultCity);
 
-    /*const hours = moment().hour();
+    const hours = moment().hour();
     var mode = "";
     if (hours < 24) {
       mode = "midnight"
     }
     if (hours < 19) {
-      mode = "evening";
-    }
+        mode = "evening";
+      }
     if (hours < 15) {
       mode ="afternoon";
     }
@@ -30,7 +30,7 @@ export default function Weather(props) {
     if (hours < 6) {
       mode = "morning";
     }
-    */
+    
     function handleResponse(response) {
         setWeatherData({
             ready: true,
@@ -79,7 +79,7 @@ export default function Weather(props) {
   
     if (weatherData.ready) {
         return(
-        <div className="Weather">
+        <div className={`Weather ${mode}`}>
             <form onSubmit={handleSubmit}>
                 <div className="input-group">
                     <input 
