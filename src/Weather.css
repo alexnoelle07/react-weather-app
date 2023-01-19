@@ -41,15 +41,16 @@
     margin-bottom: 40px;
 }
 .Weather #today {
-    font-size: 35px;
+    font-size: 20px;
     
 }
 .Weather #time {
-    font-size: 35px;
+    font-size: 30px;
     
 }
 .Weather #city {
     font-size: 50px;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
