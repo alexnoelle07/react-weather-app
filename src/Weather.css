@@ -38,7 +38,7 @@
     margin-bottom: 10px;
 }
 .Weather .date {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .Weather #today {
     font-size: 20px;
@@ -58,7 +58,7 @@
 
 
 .Weather .temperature-unit {
-    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Playfair', serif;
     font-size: 100px;
     text-align: center;
     background-color: transparent;
@@ -81,7 +81,7 @@
 .Weather li {
     list-style-type: none;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
 }
 .Weather li.description {
